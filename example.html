@@ -65,7 +65,7 @@
 						console.error(e);
 						return;
 					}
-					document.body.innerHTML += result.data.names[0].displayName;
+					document.body.innerHTML = result.data.names[0].displayName + document.body.innerHTML;
 
 				});
 			}
